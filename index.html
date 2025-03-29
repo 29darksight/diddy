@@ -20,6 +20,30 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .background-text {
+            position: absolute;
+            width: 240%;
+            height: 240%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.05;
+            transform: rotate(-30deg) translate(-22%, -22%);
+            gap: 15px;
+        }
+        .background-text span {
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                         0 0 20px rgba(255, 255, 255, 0.6);
+            margin: 5px;
+            display: inline-block;
         }
         .container {
             max-width: 850px;
@@ -28,9 +52,8 @@
             border-radius: 15px;
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
             transition: 0.3s;
-        }
-        .container:hover {
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            position: relative;
+            z-index: 1;
         }
         .video-container {
             width: 100%;
@@ -81,9 +104,16 @@
     </style>
 </head>
 <body>
+    <div class="background-text">
+        <script>
+            for (let i = 0; i < 1300; i++) {
+                document.write('<span>chutpaglu</span>');
+            }
+        </script>
+    </div>
     <div class="container">
         <div class="video-container">
-            <video controls>
+            <video controls controlsList="nodownload">
                 <source src="diddy.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -91,7 +121,7 @@
         <h1>Support Brainrot Health</h1>
         <p>Your donation helps provide resources and support for mental health awareness and treatment.</p>
         <a href="https://i.pinimg.com/736x/e8/24/40/e824407bf5b8110429762ad625b461e3.jpg" class="donate-btn">Donate Now</a>
-        <p class="dark-humor">Because clit is more expensive than therapy</p>
+        <p class="dark-humor">Because Clit is more expensive than Therapy</p>
     </div>
 </body>
 </html>
