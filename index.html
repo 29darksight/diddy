@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Donation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 850px;
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+        .container:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        .video-container {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            margin: 20px 0;
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+        .donate-btn {
+            display: inline-block;
+            background: #fff;
+            color: #121212;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            font-weight: bold;
+        }
+        .donate-btn:hover {
+            transform: scale(1.05);
+            background: #b0b0b0;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+        }
+        .dark-humor {
+            font-style: italic;
+            color: #888;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video controls>
+                <source src="diddy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h1>Support Mental Health</h1>
+        <p>Your donation helps provide resources and support for mental health awareness and treatment.</p>
+        <a href="https://i.pinimg.com/736x/e8/24/40/e824407bf5b8110429762ad625b461e3.jpg" class="donate-btn">Donate Now</a>
+        <p class="dark-humor">Because clit is more expensive than therapy</p>
+    </div>
+</body>
+</html>
